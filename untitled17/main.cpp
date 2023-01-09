@@ -5,6 +5,7 @@ int main() {
     std::vector<int> vec;
     int n = 0;
     while (n != -2) {
+        std::cout<<"Enter number: ";
         std::cin >> n;
         if (n != -1) {
             vec.push_back(n);
@@ -22,7 +23,7 @@ int main() {
             if (n == -1 && vec.size() >= 5) {
                 std::cout << vec[4] << std::endl;
             } else
-                std::cout << "Err" << std::endl;;
+                std::cerr << "Err" << std::endl;;
         }
         for (int i = 0; i < vec.size(); ++i) {
             std::cout << vec[i] << " ";
